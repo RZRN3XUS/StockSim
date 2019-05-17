@@ -1,6 +1,7 @@
 /*
 Christopher Dycus
-
+5/16/2019
+Object class for Stock Sim
  */
 import java.util.*;
 public class Market {
