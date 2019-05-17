@@ -105,7 +105,6 @@ public class Main {
         double finalBalanceProfitPercent = prices.getBankBalanceValue()/bankBalance;
         double finalBalanceProfit = prices.getBankBalanceValue() - bankBalance;
             System.out.println("Your final balance was $" + prices.getBankBalanceValue());
-            System.out.println("Your profit margin was " + Math.round(finalBalanceProfitPercent*100));
             System.out.println("Your total profit was $" + finalBalanceProfit);
             int placeholder = 0;
         for (int i = 0; i<=19; i++){
