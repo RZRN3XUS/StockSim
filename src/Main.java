@@ -54,7 +54,7 @@ public class Main {
                 portfolioValue = placeholder*0.01;
                 System.out.printf("%.2f", portfolioValue);
                 System.out.println();
-                System.out.println("What action would you like to do? (Buy [b], Sell [s], Check balance [c], Check stocks owned [p], Check day prices [d], End Day [e])");
+                System.out.println("What action would you like to do? (Buy [b], Sell [s], Check balance [c], Check stocks owned [p], End Day [e])");
                 action = sc.next();
                 if (action.equalsIgnoreCase("b")) { //buying stock
                     System.out.println("What stock would you like to buy? (Stock #)");
@@ -89,13 +89,11 @@ public class Main {
                     }
                 else if (action.equalsIgnoreCase("e")) { //end day
                     day = false;}
-                else if (action.equalsIgnoreCase("d")) { //get day prices
-                    prices.getDayPrices();
+                else if (action.equalsIgnoreCase("p")) { //get day prices
+                    for (int i = 0; i<=19; i++)
+                        prices.stocksOwned(stocksOwned[i], i);
                 } else if(action.equalsIgnoreCase("c")){ //check bank balance
                     prices.getBankBalance();
-                } else if(action.equalsIgnoreCase("p")){ //check stocks owned
-                    for (int i = 0; i<=19; i++)
-                    prices.stocksOwned(stocksOwned[i], i);
                 }
                 else {
                     System.err.println("Invalid action");
